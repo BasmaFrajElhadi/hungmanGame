@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Basma Faraj Alhadi">
+    <!-- add icon link -->
+    <link rel = "icon" href = "images/logo.webp">
+    <title>Hang Man Game</title>
+    <!-- normalize file : render all elements normally   -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awesome library-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google font (Cairo)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Amiri:ital@0;1&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Dancing+Script:wght@400;500;600;700&family=Hurricane&family=Italianno&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Parisienne&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <div class="game-name">Hang Man Game</div>
+            <div class="category">
+                Word from: <span></span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="hangman-draw">
+                <div class="the-draw">
+                    <div class="the-stand"></div>
+                    <div class="the-hang"></div>
+                    <div class="the-rope"></div>
+                    <div class="the-man">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters"></div>
+        </div>
+        <hr>
+        <div class="letters-guess"></div>
+        <audio id="success" src="sounds/success.mp3" preload="auto"></audio>
+        <audio id="fail" src="sounds/fail.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- script links -->
+    <script src="js/index.js"></script>
+</body>
+</html>
